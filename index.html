@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BlackJack - JS</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+    <body>
+        
+        <header class="title">
+            <t1> BlackJack </t1>
+        </header>
+
+        <div class="row mt-2">
+            <div class="col text-center">
+                <button class="btn btn-danger"> Nuevo Juego </button>
+                <button class="btn btn-primary"> Pedir carta </button>
+                <button class="btn btn-primary"> Detener </button>
+            </div>
+        </div>
+
+        <!-- Jugador -->
+        <div class="row container">
+            <div class="col">
+                <h1> Jugador: <small> 0 pts. </small> </h1>
+                <div id="player-cards" class="row">
+                    <img class="card" src="./assets/deck/2C.png">
+                    <img class="card" src="./assets/deck/2C.png">
+                    <img class="card" src="./assets/deck/2C.png">
+                </div>
+            </div>
+        </div>
+        <!-- Computadora -->
+        <div class="row container">
+            <div class="col">
+                <h1> Computadora: <small> 0 pts. </small> </h1>
+                <div id="computer-cards" class="row">
+                    <img class="card" src="./assets/deck/3S.png">
+                    <img class="card" src="./assets/deck/3S.png">
+                    <img class="card" src="./assets/deck/3S.png">
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./assets/js/game.js"></script>
+    </body>
+</html>
