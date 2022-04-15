@@ -16,32 +16,28 @@
         </header>
 
         <div class="row mt-2">
-            <div class="col text-center">
-                <button class="btn btn-danger"> Nuevo Juego </button>
-                <button class="btn btn-primary"> Pedir carta </button>
-                <button class="btn btn-primary"> Detener </button>
+            <div id="button-container" class="col text-center">
+                <button id="btn-newgame"    class="btn btn-danger"> Nuevo Juego </button>
+                <button id="btn-getcard"    class="btn btn-primary"> Pedir carta </button>
+                <button id="btn-stop"       class="btn btn-primary"> Detener </button>
             </div>
         </div>
 
         <!-- Jugador -->
         <div class="row container">
             <div class="col">
-                <h1> Jugador: <small> 0 pts. </small> </h1>
+                <h1> Jugador: <small id="player-score"> 0 </small> pts. </h1>
                 <div id="player-cards" class="row">
-                    <img class="card" src="./assets/deck/2C.png">
-                    <img class="card" src="./assets/deck/2C.png">
-                    <img class="card" src="./assets/deck/2C.png">
+                    <!-- <img class="card" src="./assets/deck/2C.png"> -->
                 </div>
             </div>
         </div>
         <!-- Computadora -->
         <div class="row container">
             <div class="col">
-                <h1> Computadora: <small> 0 pts. </small> </h1>
+                <h1> Computadora: <small id="computer-score"> 0 </small> pts.</h1>
                 <div id="computer-cards" class="row">
-                    <img class="card" src="./assets/deck/3S.png">
-                    <img class="card" src="./assets/deck/3S.png">
-                    <img class="card" src="./assets/deck/3S.png">
+                    <!-- <img class="card" src="./assets/deck/3S.png"> -->
                 </div>
             </div>
         </div>
